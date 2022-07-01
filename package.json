@@ -1,0 +1,35 @@
+{
+  "name": "comcad-backend",
+  "version": "1.0.0",
+  "description": "Backend para sistema de incrições do COMCAD",
+  "main": "index.js",
+  "scripts": {
+    "pre-run": "yarn sequelize-cli db:create && yarn sequelize-cli db:migrate && yarn seed",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "yarn pre-run && nodemon .",
+    "start": "node .",
+    "drop": "yarn sequelize-cli db:drop",
+    "seed": "yarn sequelize-cli db:seed:all"
+  },
+  "keywords": [
+    "bla"
+  ],
+  "author": "Abner Soares e Asafe Dainez",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.0",
+    "sequelize-cli": "^6.4.1"
+  }
+}
