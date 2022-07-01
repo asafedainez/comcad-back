@@ -2,7 +2,9 @@
   "conventionalCommits.scopes": [
     "http status",
     "sequelize models",
-    "sequelize migrations"
+    "sequelize migrations",
+    "sequelize seeds",
+    "conventional commits"
   ],
   "conventionalCommits.gitmoji": false,
   "conventionalCommits.promptFooter": false
