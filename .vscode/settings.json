@@ -1,0 +1,9 @@
+{
+  "conventionalCommits.scopes": [
+    "http status",
+    "sequelize models",
+    "sequelize migrations"
+  ],
+  "conventionalCommits.gitmoji": false,
+  "conventionalCommits.promptFooter": false
+}
