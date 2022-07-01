@@ -33,7 +33,7 @@ const UserSchema = (sequelize, DataTypes) => {
     role: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 0,
+      defaultValue: 1,
       references: {
         model: 'Role',
         key: 'id',
