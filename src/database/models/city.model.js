@@ -3,6 +3,7 @@ const CitySchema = (sequelize, DataTypes) => {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
+      allowNull: false,
       autoIncrement: true,
     },
     name: {
@@ -11,6 +12,7 @@ const CitySchema = (sequelize, DataTypes) => {
     },
   }, {
     tableName: 'cities',
+    timestamps: false,
   });
 
   CityTable.associate = (models) => {

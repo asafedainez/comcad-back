@@ -27,6 +27,7 @@ const AddressSchema = (sequelize , DataTypes) => {
     },
   }, {
     tableName: 'addresses',
+    timestamps: false,
   });
 
   AddressTable.associate = (models) => {

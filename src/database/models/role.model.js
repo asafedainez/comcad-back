@@ -12,6 +12,7 @@ const RoleSchema = (sequelize, DataTypes) => {
     },
   }, {
     tableName: 'roles',
+    timestamps: false,
   });
 
   RoleTable.associate = (models) => {

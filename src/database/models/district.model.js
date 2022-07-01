@@ -19,6 +19,7 @@ const DistrictSchema = (sequelize, DataTypes) => {
     },
   }, {
     tableName: 'districts',
+    timestamps: false,
   });
 
   DistrictTable.associate = (models) => {

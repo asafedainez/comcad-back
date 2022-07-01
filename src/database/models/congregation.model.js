@@ -28,6 +28,7 @@ const CongregationSchema = (sequelize, DataTypes) => {
     },
   }, {
     tableName: 'congregations',
+    timestamps: false,
   });
 
   CongregationTable.associate = (models) => {
