@@ -35,20 +35,22 @@ module.exports = {
         },
       },
       role: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.ENUM,
+        values: ['user', 'coordinator','admin'],
+        allowNull: false,
+        defaultValue: 'user',
+      },
+      active: {
+        type: Sequelize.BOOLEAN,
         allowNull: false,
         defaultValue: 1,
-        references: {
-          model: 'roles',
-          key: 'id',
-        },
       },
-      created_at: {
+      createdAt: {
         type: Sequelize.DATE,
         defaultValue: Sequelize.fn('now'),
         allowNull: false,
       },
-      updated_at: {
+      updatedAt: {
         type: Sequelize.DATE,
         defaultValue: Sequelize.fn('now'),
         allowNull: false,

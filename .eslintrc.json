@@ -12,9 +12,11 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-        "no-unused-vars": ["error", {
+        "no-unused-vars": [
+            "error", {
                 "argsIgnorePattern": "^_",
                 "caughtErrors": "none"
-            }]
+            }],
+        "consistent-return": 0
     }
 }

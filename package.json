@@ -4,12 +4,12 @@
   "description": "Backend para sistema de incrições do COMCAD",
   "main": "index.js",
   "scripts": {
-    "pre-run": "yarn sequelize-cli db:create && yarn sequelize-cli db:migrate && yarn seed",
+    "pre-run": "yarn sequelize db:create && yarn sequelize db:migrate && yarn seed",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "yarn pre-run && nodemon .",
+    "dev": "yarn pre-run && yarn nodemon .",
     "start": "node .",
-    "drop": "yarn sequelize-cli db:drop",
-    "seed": "yarn sequelize-cli db:seed:all"
+    "drop": "yarn sequelize db:drop",
+    "seed": "yarn sequelize db:seed:all"
   },
   "keywords": [
     "bla"
@@ -23,6 +23,7 @@
     "nodemon": "^2.0.16"
   },
   "dependencies": {
+    "crypto-js": "^4.1.1",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",

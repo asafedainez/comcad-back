@@ -31,13 +31,9 @@ const UserSchema = (sequelize, DataTypes) => {
       },
     },
     role: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.ENUM,
+      values: ['user', 'coordinator','admin'],
       allowNull: false,
-      defaultValue: 1,
-      references: {
-        model: 'Role',
-        key: 'id',
-      },
     },
     active: {
       type: DataTypes.BOOLEAN,
@@ -59,11 +55,6 @@ const UserSchema = (sequelize, DataTypes) => {
   });
 
   UserTable.associate = (models) => {
-    UserTable.belongsTo(models.Role, {
-      foreignKey: 'role',
-      as: 'role',
-    });
-
     UserTable.belongsTo(models.Congregation, {
       foreignKey: 'congregation',
       as: 'congregation',
