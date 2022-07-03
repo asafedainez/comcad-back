@@ -4,7 +4,11 @@
     "sequelize models",
     "sequelize migrations",
     "sequelize seeds",
-    "conventional commits"
+    "conventional commits",
+    "controller",
+    "routes",
+    "services",
+    "eslint"
   ],
   "conventionalCommits.gitmoji": false,
   "conventionalCommits.promptFooter": false
