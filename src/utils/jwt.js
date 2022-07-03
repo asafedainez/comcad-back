@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const httpStatus = require('./http-status');
+const httpStatus = require('./httpStatus');
 
 const secret = process.env.JWT_SECRET;
 
