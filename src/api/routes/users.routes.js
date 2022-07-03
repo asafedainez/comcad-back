@@ -1,7 +1,7 @@
 const Router = require('express').Router();
 const jwt = require('../../utils/jwt');
 
-Router.get('/users/login', (req, res) => {
+Router.get('/login', (req, res) => {
   // const { email, password } = req.body;
 
   // verificar se o usuario existe e se a senha esta correta
