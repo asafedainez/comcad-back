@@ -1,4 +1,4 @@
-const httpStatus = require('../../utils/http-status');
+const httpStatus = require('../../utils/httpStatus');
 
 const errorMiddleware = (err, req, res, _next) => {
   res
