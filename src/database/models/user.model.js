@@ -22,7 +22,7 @@ const UserSchema = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    congregation: {
+    congregationId: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
@@ -56,7 +56,7 @@ const UserSchema = (sequelize, DataTypes) => {
 
   UserTable.associate = (models) => {
     UserTable.belongsTo(models.Congregation, {
-      foreignKey: 'congregation',
+      foreignKey: 'congregationId',
       as: 'congregation',
     });
   };

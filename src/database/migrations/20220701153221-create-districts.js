@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      city: {
+      cityId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {

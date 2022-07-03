@@ -9,7 +9,7 @@ const CongregationSchema = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    address: {
+    addressId: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
@@ -38,11 +38,12 @@ const CongregationSchema = (sequelize, DataTypes) => {
     });
 
     CongregationTable.belongsTo(models.Address, {
-      foreignKey: 'address',
+      foreignKey: 'addressId',
+      as: 'address',
     });
   };
 
   return CongregationTable;
-}
+};
 
 module.exports = CongregationSchema;

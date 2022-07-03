@@ -7,14 +7,14 @@ module.exports = {
       {
         id: 1,
         address: 'Av. Comercial',
-        district: 1,
+        districtId: 1,
         number: '123',
         complement: null,
       },
       {
         id: 2,
         address: 'Quadra 303 Conjunto 06 Lote 06',
-        district: 10,
+        districtId: 10,
         number: '06',
         complement: null,
       },

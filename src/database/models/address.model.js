@@ -9,7 +9,7 @@ const AddressSchema = (sequelize , DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    district: {
+    districtId: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
@@ -32,13 +32,14 @@ const AddressSchema = (sequelize , DataTypes) => {
   });
 
   AddressTable.associate = (models) => {
-    AddressSchema.hasMany(models.Congregation, {
+    AddressTable.hasMany(models.Congregation, {
       foreignKey: 'id',
-      as: 'congregations',
+      as: 'congregation',
     });
 
     AddressTable.belongsTo(models.District, {
-      foreignKey: 'district',
+      foreignKey: 'districtId',
+      as: 'district',
     });
   };
 

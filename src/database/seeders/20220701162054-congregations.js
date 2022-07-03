@@ -7,15 +7,15 @@ module.exports = {
       {
         id: 1,
         name: 'Catedral do Amor',
-        address: 1,
+        addressId: 1,
         shepherd: 'Heder Pains',
         region: '2',
       },
       {
         id: 2,
         name: 'Monte Sião Quadra 303',
-        address: 2,
-        shepherd: 'Heder Pains',
+        addressId: 2,
+        shepherd: '',
         region: '2',
       },
     ], {});

@@ -24,3 +24,5 @@ const CitySchema = (sequelize, DataTypes) => {
 
   return CityTable;
 }
+
+module.exports = CitySchema;
